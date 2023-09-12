@@ -1,0 +1,85 @@
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+      <title>HTML Forms</title>
+    </head>
+    <body>
+      <section id="overlay">
+        <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_burger-logo.svg" alt="Davie's Burgers Logo" id="logo">
+        <hr>
+        <!--Add your code below-->
+        <form action="submission.html" method = "POST">
+          <section class = "protein">
+           <label for="patty">What type of protein would you like?</label>
+          <input type="text" name="username" value="beef" id="patty">
+            <hr>
+          </section>
+          <section>
+          <label for ="amount">How many patties would you like?</label>
+          <input name="years" type="number" step="1" id="amount">
+          <hr>
+          </section>
+          <section>
+          <label for = "doneness"><em>How would you like your patty?</em></label>
+          <br>
+          <span>Rare</span>
+          <input id = "doneness" name = "doneness" type = "range" min="0" max = "5">
+          <span style = "color:red">Well-done</span>
+          <hr>
+          </section>
+          <section class ="toppings">
+            <span>What toppings would you like?</span>
+            <br>
+            <input id="salad" name="topping" type="checkbox" value="salad">
+            <label for="salad"><em>Salad</em></label>
+            <input id="onion" name="topping" type="checkbox" value="onion">
+            <label for="onion"><em>Onion </em></label>
+            <input id="tomato" name="topping" type="checkbox" value="tomato">
+            <label for="tomato"><em>Tomato </em></label>
+            <br>
+          </section>
+          <section class = "cheese">
+            <span>Would you like to add some cheese ?</span>
+            <br>
+            <input type="radio" name ="cheese" id = "Yes" value ="Yes">
+            <label for="Yes">Yes</label>
+            <input type="radio" name ="cheese" id = "No" value ="No">
+            <label for="No">No</label>
+            <hr>
+          </section>
+          <section class ="bun-type">
+            <span>What kind of bun would you like ? </span>
+            <label for="bun"></label>
+            <select name="bun" id="bun">
+            <option value="Sesame">Sesame</option>
+            <option value="Potato">Potato</option>
+            <option value="Pritzel">Pritzel</option>
+              </select>
+          </section>
+          <hr>
+          <section class = "sauce">
+            <label for="sauce">Sauces</label>
+            <input type="text" list = "sauces" id = "sauce" name ="sauce">
+            <datalist id = "sauces">
+              <option value="Ketchup">Ketchup</option>
+              <option value="Mustard">Mustard</option>
+              <option value="Mayo">Mayo</option>
+            </datalist>
+          </section>
+           <hr>  
+         <section class ="extra">
+           <label for="extra">Anything else you want to add ? </label>
+           <br>
+           <textarea name="extra" id="extra" cols="30" rows="10">Want something else ? </textarea>
+           <hr>
+           <section class = "Submit"></section>
+           <input type="submit" value="Submit">
+         </section>
+        </form>
+      </section>
+    </body>
+  </html>
+  
